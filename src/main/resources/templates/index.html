@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" th:href = "@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <title>Document</title>
+</head>
+
+<body>
+<div  class="container-fluid text-center">
+<div class="container" >
+    <div class="centerss">
+        <a href="add_student" class="btn btn-primary" onclick="formAddStudent()" >Add Students</a>
+        <a href="add_teacher" class="btn btn-primary" >Add Teachers</a>
+        <a href="add_course" class="btn btn-primary" >Add Course</a>
+        <a href="student" class="btn btn-primary" >Show Student</a>
+        <a href="teacher" class="btn btn-primary" >Show Teacher</a>
+    </div>
+</div>
+      </div>
+<script>
+    function formAddStudent(){
+        window.location = "[[@{/teacher}]]";
+    }
+</script>
+</body>
+</html>
